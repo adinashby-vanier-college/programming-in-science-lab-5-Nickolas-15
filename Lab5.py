@@ -14,7 +14,6 @@ def hollow_square(n):
             result += "*" * (n) + "\n"
 
     return result.rstrip()
-
 # 1
 # 12
 # 123
@@ -31,10 +30,11 @@ def number_pattern(n):
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
 def sum_of_natural_numbers(n):
     total = 0
-    i = 1           # we do i = 1 because we dont want to include zero... i said IRL that it is the index but im not sure
+    i = 1           
     while i <= n:
         total += i
         i += 1
+
     return total
 print(sum_of_natural_numbers(5))
 # Example for n = 4:
@@ -45,8 +45,8 @@ print(sum_of_natural_numbers(5))
 def centered_star_pyramid(n):
     pyramid = ""
     for i in range(1, n + 1):
-        spaces = ' ' * (n - i)
-        stars = '*' * (2 * i - 1)
+        spaces = " " * (n - i)
+        stars = "*" * (2 * i - 1)
         pyramid += spaces + stars + '\n'
+
     return pyramid.rstrip()
-print(centered_star_pyramid(5))
